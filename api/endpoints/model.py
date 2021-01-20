@@ -4,7 +4,7 @@ from fastapi.responses import FileResponse
 import pandas as pd
 from Classifier import Classifier
 
-some_file_path = "Ejemplo.csv"
+some_file_path = "Example.csv"
 
 router = APIRouter()
 clf = Classifier()
