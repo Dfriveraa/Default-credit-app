@@ -2,8 +2,10 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import logging
 from api.api import api_router
+from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()
+
 origins = ["*"]
 app.include_router(api_router, prefix="/api")
 app.add_middleware(
